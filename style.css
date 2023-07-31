@@ -1,0 +1,23 @@
+:root {
+  --color-green
+  --color-white
+  --color-dark-grey
+  --color-medium-gry 
+  --color-ligh-grey
+
+}
+*{
+box-sizing:  border-box;
+}
+
+body{
+    margin: 0;
+    background: var(--color-medium-grey);
+    color: var(--color-white);
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+.header{
+    text-align: center;
+}
+
