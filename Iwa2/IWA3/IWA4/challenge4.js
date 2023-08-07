@@ -1,5 +1,5 @@
 const date= 2050
-const status =(parent) 
+const status=(parent) 
 const value = 9
 const countA= 9
 const count1=9
@@ -33,7 +33,7 @@ if (date)
 
 	console.log(date, 'Day of Goodwill')
 	let count3 = 9 + 1
-}
+} 
 
 console.log('Your status is:', status )
 console.log('The year is:', date)
