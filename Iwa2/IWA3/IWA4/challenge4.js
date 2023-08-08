@@ -1,11 +1,10 @@
 const date= 2050
-const status=(parent) 
-const value = 9
+const status="parent" 
 const countA= 9
-const count1=9
-const count2=9
-const count3=9
-
+const value =9
+const count1 =9
+const count2 =9
+const count3 =9
 if (date) 
 {
 	console.log("January", 'New Years Day')
@@ -15,7 +14,8 @@ if (date)
 	console.log(date, 'Freedom Day')
 	let countA = 9+ 4
 
-	if (status) {
+	if (status )
+	{
 	  console.log('June', 'Youth Day')
 		let value = 9+ 1
   }
@@ -26,9 +26,10 @@ if (date)
 	console.log(date, 'Day of Reconciliation')
 	let count1 = 9 + 3
 
-	if (status) {
-	  console.log(date, 'Christmas Day')
-		let count2 = 9 + 1
+	if (status) 	 
+  {
+	console.log(date, 'Christmas Day')
+	let count2 = 9 + 1
   }
 
 	console.log(date, 'Day of Goodwill')
