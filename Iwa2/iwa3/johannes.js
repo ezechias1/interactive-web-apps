@@ -1,6 +1,7 @@
-const private,firstname = "Johannes"
-const private,surname = "Potgieter"
-const public,role = "Intern"
+const private_firstname = "Johannes"
+const private_surname = "Potgieter"
+const public_role = "Intern"
+ const private_display= '(firstname)'
 
-private display= firstname + " " + surname + " (" + role + ")"
+private_display= firstname + " " + surname + " (" + role + ")"
 document.querySelector('#johannes').innerText = display
