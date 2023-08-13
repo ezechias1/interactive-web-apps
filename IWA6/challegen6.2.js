@@ -13,7 +13,7 @@ if (hourOfDay!==null) (minuteOfDay !== null) && (hourOfDay == '00') && (minuteOf
  {
 	const taxAsDecimal = tax / '100'
   const startingAfterTax = salary * '1' - taxAsDecimal
-	const balance === (salary - transport - food - rent)
+	const balance =startingAfterTax (salary - transport - food - rent)
 }
 	
 console.log(balance.toFixed(3))

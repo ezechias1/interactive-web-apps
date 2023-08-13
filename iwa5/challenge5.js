@@ -13,10 +13,10 @@ const toys = 100 * 5
 const shirts = 150 * 'NONE_SELECTED'
 const batteries =35 * 2
 const pens = 5 * 'NONE_SELECTED' 
-const total= shoes+toys+ shirts+batteries+pens
+const total= shoes+toys+ shirts+batteries+pens;
 shipping = null
-currency = $
-
+ currency = $
+console.log(total)
 if (location=== "RSA") {shipping=400 currency && =='R'}
 if (location=== "NAM") {}
 	else{shipping=600}
@@ -26,8 +26,8 @@ if (total>=1000 && currency 'R' || total>600 && currency)
 
 if (shipping===0 && currency!==1) {console.log(FREE_WARNING)}
 
-if (loacation==='NK') {console.log(BANNED_WARNIN) "WARNING":}
-else{console.log ('price', currency,total)}
+if (loacation==='NK') {console.log(BANNED_WARNIN) :}
+else{console.log ('price', currency,total+)}
 	
 
  
