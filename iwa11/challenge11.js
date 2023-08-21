@@ -1,7 +1,7 @@
  // script.js
  
 
-console.log()
+
 const root1 = document.querySelector('[data-key="order1"]')
 console.log(root1)
 const data_biscuits =root1.dataset.biscuits
@@ -46,7 +46,11 @@ console.log(_pancakes)
 const _delivered=root3.dataset.delivered
 console.log(_delivered)
 
-newHTML =document.open( ");
+
+const biscuits = document.querySelector('[data-key="order1"] .biscuits .count')
+console.log(biscuits) 
+'oder1.biscuits.count'.Attribute(data_biscuits)
+
 
 //1-biscuits= 1-root.biscuits,
 //1-donuts = 1-root.donuts,
