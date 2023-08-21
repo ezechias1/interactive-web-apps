@@ -57,26 +57,20 @@ const donuts = document.querySelector('[data-key="order1"] .donuts .count')
 donuts.innerHTML=data_donuts
 const pancakes= document.querySelector('[data-key="order1"] .pancakes .count')
 pancakes.innerHTML=data_pancakes
-const delivered=document.querySelector('[data-key="order1"] .delivered .dd ')
-delivered.innerHTML=delivered
+const delivered=document.querySelector('[data-key="order1"] .status dd')
+delivered.innerHTML=data_delivered
+
+const biscuits2 = document.querySelector('[data-key="order2"] .biscuits .count')
+console.log(biscuits) 
+biscuits.innerHTML=doc_biscuits
+const donut2 = document.querySelector('[data-key="order2"] .donuts .count')
+donuts.innerHTML=doc_donuts
+const pancakes2= document.querySelector('[data-key="order2"] .pancakes .count')
+pancakes.innerHTML=doc_pancakes
+const delivered2=document.querySelector('[data-key="order2"] .status dd')
+delivered.innerHTML=doc_delivered
 
 
-//const biscuits2 = document.querySelector('[data-key="order2"] .biscuits .count')
-//biscuits2.innerHTML=1
 
 
 
-//1-biscuits= 1-root.biscuits,
-//1-donuts = 1-root.donuts,
-//1-pancakes = 1-root.pancakes,
-//1-status = 1-root.status ? Delivered : Pending
-
-//2-biscuits= 2-root.biscuits,
-//2-donuts = 2-root.donuts,
-//2-pancakes = 2-root.pancakes,
-//2-status = 2-root.status ? Delivered : Pending
-
-//3-biscuits= 3-root.biscuits,
-//3-donuts = 3-root.donuts,
-//3-pancakes = 3-root.pancakes,
-//3-status = 3-root.status ? Delivered : Pending                     
