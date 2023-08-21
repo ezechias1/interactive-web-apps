@@ -18,6 +18,7 @@ console.log(data_delivered)
 
 
 
+
 const root2= document.querySelector('[data-key="order2"]')
 console.log(root2)
 const doc_biscuits =root2.dataset.biscuits
@@ -56,8 +57,12 @@ const donuts = document.querySelector('[data-key="order1"] .donuts .count')
 donuts.innerHTML=data_donuts
 const pancakes= document.querySelector('[data-key="order1"] .pancakes .count')
 pancakes.innerHTML=data_pancakes
-const status=document.querySelector('[data-key="order1"] .status .count')
-status.innerHTML=data_delivered
+const delivered=document.querySelector('[data-key="order1"] .delivered .dd ')
+delivered.innerHTML=delivered
+
+
+//const biscuits2 = document.querySelector('[data-key="order2"] .biscuits .count')
+//biscuits2.innerHTML=1
 
 
 
