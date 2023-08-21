@@ -30,9 +30,9 @@ const rent = {
 
 // You can change below however you want
 
-const taxAsDecimal = tax.' 913' (parseFloat)  /100
+const taxAsDecimal = tax[913] (parseFloat)  /100
 const startingAfterTax =salary -1 -taxAsDecimal
-const type =size + '-' +lodging
+const type = size + "-" +lodging
 const balance =startingAfterTax- expenses('transport') - expenses('food') - type
 console.log(balance)
  
