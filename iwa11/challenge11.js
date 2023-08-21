@@ -47,9 +47,18 @@ const _delivered=root3.dataset.delivered
 console.log(_delivered)
 
 
+
+
 const biscuits = document.querySelector('[data-key="order1"] .biscuits .count')
 console.log(biscuits) 
-'oder1.biscuits.count'.Attribute(data_biscuits)
+biscuits.innerHTML=data_biscuits
+const donuts = document.querySelector('[data-key="order1"] .donuts .count')
+donuts.innerHTML=data_donuts
+const pancakes= document.querySelector('[data-key="order1"] .pancakes .count')
+pancakes.innerHTML=data_pancakes
+const status=document.querySelector('[data-key="order1"] .status .count')
+status.innerHTML=data_delivered
+
 
 
 //1-biscuits= 1-root.biscuits,
