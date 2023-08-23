@@ -98,8 +98,6 @@ console.log(`${firstDay}/${firstMonth}/${currentYear}`)
 
 const lastHoliday = new Date(lastHolidayTimestamp)
 const lastDay = lastHoliday.getDate().toString().padStart(2,0)
-const lastHoliday = new Date(lastHolidayTimestamp)
-const lastDay = lastHoliday.getDate().toString().padStart(2,0)
 const lastMonth = (lastHoliday.getMonth() + 1).toString().padStart(2,0)
 console.log(`${lastDay}/${lastMonth}/${currentYear}`)
 
