@@ -28,82 +28,39 @@ const STATUS_MAP = {
 // Edit below line 
 
 
-const status1 = document.querySelector("#book1")
-console.log(status1)
-if (status1.querySelector(".status").innerHTML=="shelf") {
-    status1.style.color = STATUS_MAP.shelf.color
-    status1.style.color = STATUS_MAP.status.color
-    reserve1 = STATUS_MAP.shelf.canReserver ? 'enabled' : 'disabled'
-    checkout1 = STATUS_MAP.shelf.canCheckout ? 'enabled' : 'disabled'
-    checkIn = STATUS_MAP.shelf.canCheckIn ? 'enabled' : 'disabled'
-}
-else if (status1.innerHTML=="reserved") {
-status1.style.color= STATUS_MAP.reserved.color
-}
-else if (status1.innerHTML=="overdue") {
-    status1.style.color= STATUS_MAP.overdue.color
-}
-else if (status1.innerHTML=="checkedOut") {
-    status1.style.color= STATUS_MAP.checkedOut.color
-}
+ const status1 = document.querySelector("#book1 .status")
+ status1.style.color = STATUS_MAP.overdue.color
+const reserve1= document.querySelector("#book1 .reserve")
+console.log(reserve1)
+reserve1.disable=STATUS_MAP.overdue.canReserve
+const checkout1= document.querySelector("#book1 .checkout")
+console.log(checkout1)
+checkout1.disable=STATUS_MAP.overdue.canCheckout
+const checkIn1= document.querySelector("#book1 .checkin")
+console.log(checkIn1)
+checkIn1.style=STATUS_MAP.overdue.canCheckIn
+
 const status2 = document.querySelector("#book2 .status")
-console.log(status2)
-if (status2.innerHTML=="shelf") {
-    status2.style.color = STATUS_MAP.shelf.color
-    checkIn2.color = none
-    status2.style.color = STATUS_MAP.status.color
-    reserve2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-    checkout2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-    checkIn2= STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-    
-}
-else if (status2.innerHTML=="reserved") {
-status2.style.color= STATUS_MAP.reserved.color
-}
-else if (status2.innerHTML=="overdue") {
-    status2.style.color= STATUS_MAP.overdue.color
-}
-else if (status2.innerHTML=="checkedOut") {
-    status2.style.color= STATUS_MAP.checkedOut.color
-}
-const status3 = document.querySelector("#book3 .status")
-console.log(status3)
-if (status3.innerHTML=="shelf") {
-    status3.style.color = STATUS_MAP.shelf.color
-   
-}
-else if (status3.innerHTML=="reserved") {
-status3.style.color= STATUS_MAP.reserved.color
-}
-else if (status3.innerHTML=="overdue") {
-    status3.style.color= STATUS_MAP.overdue.color
-}
-else if (status3.innerHTML=="checkedOut") {
-    status3.style.color= STATUS_MAP.checkedOut.color
-}
-//status1.style.color = (STATUS_MAP.status1)
-status1.color
+ status2.style.color = STATUS_MAP.reserved.color
+const reserve2= document.querySelector("#book2 .reserve")
+ console.log(reserve2)
+ reserve2.disable=STATUS_MAP.reserved.canReserve
+ const checkout2= document.querySelector("#book2 .checkout")
+ console.log(checkout2)
+ checkout1.disable=STATUS_MAP.reserved.canCheckout
+ const checkIn2= document.querySelector("#book2 .checkin")
+ console.log(checkIn2)
+ checkIn2.style=STATUS_MAP.reserved.canCheckIn
 
 
-const shelf = status1.querySelector(".checkin")
-shelf.disabled = STATUS_MAP.status.canCheckIn
- 
-
-
-checkIn.color = none
-status1.style.color = STATUS_MAP.status.color
-reserve1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkIn = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-
-checkIn2.color = none
-status2.style.color = STATUS_MAP.status.color
-reserve2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkIn2= STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-
-checkIn3.color = none
-status3.style.color = STATUS_MAP.status.color
-reserve3 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout3 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkIn3= STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+ const status3 = document.querySelector("#book3 .status")
+  status1.style.color = STATUS_MAP.shelf.color
+ const reserve3= document.querySelector("#book3 .reserve")
+  console.log(reserve3)
+  reserve2.disable=STATUS_MAP.shelf.canReserve
+  const checkout3= document.querySelector("#book3 .checkout")
+  console.log(checkout3)
+  checkout1.disable=STATUS_MAP.shelf.canCheckout
+  const checkIn3= document.querySelector("#book3 .checkin")
+  console.log(checkIn3)
+  checkIn3.style=STATUS_MAP.shelf.canCheckIn
