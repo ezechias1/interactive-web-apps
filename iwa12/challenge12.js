@@ -54,7 +54,7 @@ const reserve2= document.querySelector("#book2 .reserve")
 
 
  const status3 = document.querySelector("#book3 .status")
-  status1.style.color = STATUS_MAP.shelf.color
+ status3.style.color = STATUS_MAP.shelf.color
  const reserve3= document.querySelector("#book3 .reserve")
   console.log(reserve3)
   reserve2.disable=STATUS_MAP.shelf.canReserve
