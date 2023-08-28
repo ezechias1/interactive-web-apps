@@ -1,19 +1,15 @@
 // script.js
 
-const addNumbers = (a,b)  => 
-{ a + b ;}
+function add = a, b => { a + b }
+    
+function multiply = a, b => { a - b }
 
-
-const multiplyNumber = (a,b)   => 
-{ a * b }
-
-const internal= {
-	 added:  this.addNumbers(this.a, this.b).
-	   this.multiplyNumber(this.a, this.b)
-//	return this
-// 
+function internal() {
+	const added = this.add(this.a, this.b)
+	this.multiply(this.a, this.b)
+	return this
 }
-console.log(internal)
+
 // Not allowed to change below this
 
 const example1 = {
