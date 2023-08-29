@@ -1,8 +1,8 @@
 // script.js
 
-function add = a, b => { a + b }
+function add =   (a)  => { a + b }
     
-function multiply = a, b => { a - b }
+function multiply = (b)  => { a * b }
 
 function internal() {
 	const added = this.add(this.a, this.b)
