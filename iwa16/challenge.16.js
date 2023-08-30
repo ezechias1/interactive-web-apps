@@ -119,12 +119,11 @@ const MONTHS = [
     document.querySelector('[data-athlete="'+id+'"]').appendChild(fragment)
   }
   
- const [SV782] = data.response.data
- const [NM372]= data.response.data
-  console.log(NM372)
+ //[NM372], [SV782] = data.response.data
+  //console.log(NM372)
   for (const [key,value] of Object.entries(data.response.data)) {
     createHtml(value);
   }
 
-  document.querySelector(NM372).appendChild(createHtml(NM372));
-  document.querySelector(SV782).appendChild(createHtml(SV782))
+  //document.querySelector(NM372).appendChild(createHtml(NM372));
+  //document.querySelector(SV782).appendChild(createHtml(SV782));
