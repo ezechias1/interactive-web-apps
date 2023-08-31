@@ -124,5 +124,5 @@ const MONTHS = [
     createHtml(value);
   }
 
-  //document.querySelector(NM372).appendChild(createHtml(NM372));
-  //document.querySelector(SV782).appendChild(createHtml(SV782));
+  document.querySelector(NM372).appendChild(createHtml(NM372));
+  document.querySelector(SV782).appendChild(createHtml(SV782));
