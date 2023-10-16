@@ -1,9 +1,9 @@
 /**This  is the name of the user */
 
-const name ='Jonh'
+const username ='Jonh'
 
 /**This is the surname of the user */
 
 const surname = 'Smith'
 
-console.log (user, surname)
+console.log (username, surname)
