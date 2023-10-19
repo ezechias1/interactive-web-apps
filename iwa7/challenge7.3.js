@@ -11,8 +11,9 @@ const divider = '----------------------------------'
 // Only change below this line
 
 const owed = parseFloat( + leoBalance + sarahBalance)
-const leo = '${leoName} + ${leoSurname} (text.trim) (Owed:R {leoBalance})\n\
-const sarah = '${sarahName} + {surname} (Owed:R${sarahBalance})\n\n\
+const leo = '${leoName} + ${leoSurname} (text.trim) (Owed:R {leoBalance})n"
+
+ sarah = '${sarahName} + {surname} (Owed:R${sarahBalance})\n\n\
 const total = "\nTotal amount owed:\n "
 const result = leo + sarah + divider + divider + total + owed + divider
 
