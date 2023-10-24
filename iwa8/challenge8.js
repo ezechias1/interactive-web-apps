@@ -36,7 +36,8 @@ const (sarah){ {
 	'address' [
 		 sarahNumber
 		 sarahStreet
-		  sarahPostal===postalCode]
+		  sarahPostal===postalCode
+		]
 	}
 }
 

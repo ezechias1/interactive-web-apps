@@ -1,1 +1,3 @@
-console.log('Roles:', nwabisa.role, johanes.role, alex.role)
+console.log( role)
+console.log( p_role)
+console.log( publicrole)

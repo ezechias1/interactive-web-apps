@@ -1,7 +1,7 @@
-const private,firstname = "Nwabisa"
-const private,surname = "Gabe"
-const public,role = "CEO"
+const firstname = "Nwabisa"
+const surname = "Gabe"
+const role = "CEO"
 
-private display= firstname + " " + surname + " (" + role + ")"
-document.querySelector('#nwabisa').innerText = display
+const nwabisa_display= (firstname + " " + surname + " (" + role + ")")
+document.getElementById("nwabisa").innerHTML =nwabisa_display
  

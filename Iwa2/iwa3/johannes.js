@@ -1,7 +1,7 @@
-const private_firstname = "Johannes"
-const private_surname = "Potgieter"
-const public_role = "Intern"
- const private_display= '(firstname)'
+const p_firstname = "Johannes"
+const p_surname = "Potgieter"
+const p_role = "Intern"
+ const p_display= '(firstname)'
 
-private_display= firstname + " " + surname + " (" + role + ")"
-document.querySelector('#johannes').innerText = display
+const johannes_display = p_firstname + " " + p_surname + " " + p_role 
+document.getElementById("johannes").innerHTML = johannes_display
