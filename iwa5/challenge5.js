@@ -17,17 +17,17 @@ const total= shoes+toys+ shirts+batteries+pens;
 shipping = null
  currency = $
 console.log(total)
-if (location=== "RSA") {shipping=400 currency && =='R'}
+if (location=== "RSA") {shipping=400, currency='R'}
 if (location=== "NAM") {}
 	else{shipping=600}
 
 
-if (total>=1000 && currency 'R' || total>600 && currency)
+if (total>=1000 && currency==='R' || total>600 && currency==='$')
 
 if (shipping===0 && currency!==1) {console.log(FREE_WARNING)}
 
 if (loacation==='NK') {console.log(BANNED_WARNIN) }
-else{console.log ('price', currency,total+)}
+else{console.log ('price', currency,total)}
 	
 
  
