@@ -1,9 +1,9 @@
 
-const privatefirstname = 'Alex'
-const privatesurname = "Naidoo"
-const publicrole = "Head of Marketing"
+const firstname = 'Alex'
+const surname = "Naidoo"
+const role = "Head of Marketing"
 
 const Alex_display= (privatefirstname + " " + privatesurname + " "
 + publicrole )
 
-document.getElementById("alex").innerHTML =Alex_display
+document.getElementById('#alex').innerHTML =Alex_display
