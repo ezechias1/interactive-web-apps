@@ -2,12 +2,12 @@ const nickname= "Timmy";
 const firstname = "Timothy";
 
 if(first){
-const message = `Good Morning,  ${first}!`}
+const message1= `Good Morning,  ${firstname}!`}
 else if(second){            
-    const= `Good Morning, ${second}!`
+    const second= `Good Morning, ${nickname}!`
 }
 else{
-    const message=`Good Morning`
+    const third  =`Good Morning`
 }
 
-console.log(`Good Morning, ${nickname} || {firstname}!`)
+console.log(`Good Morning, ${nickname} || ${firstname}!`)
