@@ -10,11 +10,13 @@ const divider = '----------------------------------'
 
 // Only change below this line
 
-const owed = parseFloat( + leoBalance + sarahBalance)
-const leo = '${leoName} + ${leoSurname} (text.trim) (Owed:R {leoBalance})n"
+// Only change below this line
 
- sarah = '${sarahName} + {surname} (Owed:R${sarahBalance})\n\n\
-const total = "\nTotal amount owed:\n "
+const owed = parseInt('R' + leoBalance + sarahBalance)
+const leo = "{leoName} + {leoSurname} + \"Owed\" + \"R\" + {sarahBalance}"
+const sarah = "{leoName} + {surname} + \"Owed\" + \"R\" + {sarahBalance}"
+const total = "Total amount owed: "
 const result = leo + sarah + divider + divider + total + owed + divider
 
 console.log(result)
+ 

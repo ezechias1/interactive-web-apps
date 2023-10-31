@@ -1,8 +1,9 @@
 const nickname= "Timmy";
 const firstname = "Timothy";
+let message1=null
+if(firstname == "Timothy"){
+message1 = `Good Morning,  ${firstname}!`}
 
-if(first){
-const message1= `Good Morning,  ${firstname}!`}
 else if(second){            
     const second= `Good Morning, ${nickname}!`
 }
@@ -10,4 +11,4 @@ else{
     const third  =`Good Morning`
 }
 
-console.log(`Good Morning, ${nickname} || ${firstname}!`)
+console.log(message1)
