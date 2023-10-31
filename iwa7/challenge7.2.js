@@ -4,7 +4,7 @@ const firstname = "Timothy";
 if(first){
 const message = `Good Morning,  ${first}!`}
 else if(second){            
-    const= `Good Morning,  ${second}!`
+    const= `Good Morning, ${second}!`
 }
 else{
     const message=`Good Morning`
