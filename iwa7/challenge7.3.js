@@ -11,12 +11,13 @@ const divider = '----------------------------------'
 // Only change below this line
 
 // Only change below this line
-
-const owed = parseInt('R' + leoBalance + sarahBalance)
-const leo = "{leoName} + {leoSurname} + \"Owed\" + \"R\" + {sarahBalance}"
-const sarah = "{leoName} + {surname} + \"Owed\" + \"R\" + {sarahBalance}"
-const total = "Total amount owed: "
-const result = leo + sarah + divider + divider + total + owed + divider
+                                  
+const owed = ('R' + leoBalance + sarahBalance)
+const leo = leoName+leoSurname +'(Owed:' +leoBalance+')'
+const sarah = sarahName + sarahSurname +'(Owed:' +sarahBalance+')'
+const total = 'total amount owed'+':'
+const total1= owed
+const result = leo + divider + sarah + divider + total + total1 + 
 
 console.log(result)
  
