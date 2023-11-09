@@ -60,25 +60,25 @@ pancakes.innerHTML=data_pancakes
 const delivered=document.querySelector('[data-key="order1"] .status dd')
 delivered.innerHTML=data_delivered
 
-const biscuits2 = document.querySelector('[data-key="order2"] .biscuits .count')
-console.log(biscuits2) 
-biscuits.innerHTML=_biscuits
-const donut2 = document.querySelector('[data-key="order2"] .donuts .count')
-donuts.innerHTML=_donuts
-const pancakes2= document.querySelector('[data-key="order2"] .pancakes .count')
-pancakes.innerHTML=_pancakes
-const delivered2=document.querySelector('[data-key="order2"] .status dd')
-delivered.innerHTML=_delivered
+// const biscuits2 = document.querySelector('[data-key="order2"] .biscuits .count')
+// console.log(biscuits2) 
+// biscuits.innerHTML=_biscuits
+// const donut2 = document.querySelector('[data-key="order2"] .donuts .count')
+// donuts.innerHTML=_donuts
+// const pancakes2= document.querySelector('[data-key="order2"] .pancakes .count')
+// pancakes.innerHTML=_pancakes
+// const delivered2=document.querySelector('[data-key="order2"] .status dd')
+// delivered.innerHTML=_delivered
 
-//const biscuits3  = document.querySelector('[data-key="order3"] .biscuits .count')
-//console.log(doc_biscuits) 
-//biscuits.innerHTML=doc_biscuits
-//const donut3 = document.querySelector('[data-key="order3"] .donuts .count')
-//donuts.innerHTML=doc_donuts
-//const pancakes3= document.querySelector('[data-key="order3"] .pancakes .count')
-//pancakes.innerHTML=doc_pancakes
-//const delivered3=document.querySelector('[data-key="order3"] .status dd')
-//delivered.innerHTML=doc_delivered
+// const biscuits3  = document.querySelector('[data-key="order3"] .biscuits .count')
+// console.log(doc_biscuits) 
+// biscuits.innerHTML=doc_biscuits
+// const donut3 = document.querySelector('[data-key="order3"] .donuts .count')
+// donuts.innerHTML=doc_donuts
+// const pancakes3= document.querySelector('[data-key="order3"] .pancakes .count')
+// pancakes.innerHTML=doc_pancakes
+// const delivered3=document.querySelector('[data-key="order3"] .status dd')
+// delivered.innerHTML=doc_delivered
 
 
 

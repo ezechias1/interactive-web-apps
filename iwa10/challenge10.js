@@ -70,40 +70,47 @@ console.log('Name change:', holidays[christmas].name != copied.name || copied.na
 console.log('Date change:', holidays[christmas].date != copied.date || copied.date)
 
 const firstHolidayTimestamp = Math.min(
-    holidays[0].date.getTime,
-    holidays[1].date.getTime,
-    holidays[2].date.getTime,
-    holidays[3].date.getTime,
-    holidays[4].date.getTime,
-    holidays[5].date.getTime,
-    holidays[6].date.getTime,
-    holidays[7].date.getTime,
-    holidays[8].date.getTime,
+    new Date(holidays[0].date).getTime(),
+    new Date(holidays[1].date).getTime(),
+    new Date(holidays[2].date).getTime(),
+    new Date(holidays[3].date).getTime(),
+    new Date(holidays[4].date).getTime(),
+    new Date(holidays[5].date).getTime(),
+    new Date(holidays[6].date).getTime(),
+    new Date(holidays[7].date).getTime(),
+    new Date(holidays[8].date).getTime(),
+
+
+    
+
 )
 const lastHolidayTimestamp = Math.max(
-    holidays[0].date.getTime,
-    holidays[1].date.getTime,
-    holidays[2].date.getTime,
-    holidays[3].date.getTime,
-    holidays[4].date.getTime,
-    holidays[5].date.getTime,
-    holidays[6].date.getTime,
-    holidays[7].date.getTime,
-    holidays[8].date.getTime,
+    new Date(holidays[0].date).getTime(),
+    new Date(holidays[1].date).getTime(),
+    new Date(holidays[2].date).getTime(),
+    new Date(holidays[3].date).getTime(),
+    new Date(holidays[4].date).getTime(),
+    new Date(holidays[5].date).getTime(),
+    new Date(holidays[6].date).getTime(),
+    new Date(holidays[7].date).getTime(),
+    new Date(holidays[8].date).getTime(),
 )
+
 const firstHoliday = new Date(firstHolidayTimestamp)
-const firstDay = firstHoliday.getDate().toString().padStart(2,0)
-const firstMonth = (firstHoliday.getMonth()+1).toString().padStart(2.0)
+const firstDay = firstHoliday.getDate().toString().padStart(2, 0)
+const firstMonth = (firstHoliday.getMonth() + 1).toString().padStart(2, 0)
 console.log(`${firstDay}/${firstMonth}/${currentYear}`)
 
+
+
 const lastHoliday = new Date(lastHolidayTimestamp)
-const lastDay = lastHoliday.getDate().toString().padStart(2,0)
-const lastMonth = (lastHoliday.getMonth() + 1).toString().padStart(2,0)
+const lastDay = parseInt(lastHoliday.getDate())
+const lastMonth = parseInt( (lastHoliday.getMonth() + 1))
 console.log(`${lastDay}/${lastMonth}/${currentYear}`)
 
 const randomHoliday = holidays[Math.random]
-const randomDay = randomHoliday.getDate().toString().padStart(2,0)
-const randomMonth = (randomHoliday.getMonth() + 1).toString().padStart(2,0)
+const randomDay = parseInt( randomHoliday.getDate())
+const randomMonth =parseInt( (randomHoliday.getMonth() + 1))
 console.log(`${randomDay}/${randomMonth}/${currentYear}`)
 
 console.log(holidays.futureId.name || 'ID {futureId} not created yet')
