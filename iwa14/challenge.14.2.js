@@ -1,6 +1,6 @@
 // script.js
 
-function add =   (a)  => { a + b }
+function add    (a)  => { a + b }
     
 function multiply = (b)  => { a * b }
 
