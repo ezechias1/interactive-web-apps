@@ -116,7 +116,7 @@ const MONTHS = [
     fragment.appendChild(list);
   
     document.querySelector('[data-athlete="'+id+'"]').appendChild(fragment)
-  }
+  return}
   
 //  [NM372], [SV782] = data.response.data
 //   console.log(NM372)
