@@ -9,27 +9,46 @@ const data = {
 }
 
 // Only edit below
+const [, first] = data.lists[0] || [, []];
+const [, second] = data.lists[1] || [, []];
+const [, third] = data.lists[2] || [, []];
 
-const { first = 1 } = data.first || {}
-const { second = 1 } = data.second || {}
-const { third = 1 } = data.third || {}
-
-const result = [ ]
-console.log(first)
-console.log(second)
-console.log(third)
+const result = [];
 
 const extractBiggest = () => {
-    if (first[first.length -1] > second[second.length -1]) {
-        return first
-    }
+    const firstLast = first.slice(-1)[0] || -Infinity;
+    const secondLast = second.slice(-1)[0] || -Infinity;
+    const thirdLast = third.slice(-1)[0] || -Infinity;
 
-    if (third[third.length -1] < 1) {
-        return second
+
+    if (firstLast >= secondLast && firstLast >= thirdLast) {
+        result.push(first.pop());
+    } else if (secondLast >= firstLast && secondLast >= thirdLast) {
+        result.push(second.pop());
+    } else {
+        result.push(third.pop());
     }
-    
-    return third
 }
+// const { first = 1 } = data.first || {}
+// const { second = 1 } = data.second || {}
+// const { third = 1 } = data.third || {}
+
+// const result = [ ]
+// console.log(first)
+// console.log(second)
+// console.log(third)
+
+// const extractBiggest = () => {
+//     if (first[first.length -1] > second[second.length -1]) {
+//         return first
+//     }
+
+//     if (third[third.length -1] < 1) {
+//         return second
+//     }
+    
+//     return third
+// }
 
 
 // Only edit above
