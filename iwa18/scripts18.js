@@ -1,6 +1,3 @@
-
-
-
 import { html, createOrderHtml, moveToColumn, updateDraggingHtml } from "./view.js";
 import { createOrderData, state, updateDragging } from "./data.js";
 

@@ -1,3 +1,4 @@
+
 const MONTHS = [
     'January',
     'February',
@@ -13,20 +14,15 @@ const MONTHS = [
     'December',
 ];
 
+// Function to get the number of days in a month
 const getDaysInMonth = (date) => new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-// Only edit below 
 
+// Function to create an array of consecutive numbers starting from 1
 const createArray = (length) => {
-    const result = [];
-
-    for (let i = 0; i < length; i++) {
-        result.push(i);
-    }
-
-    return result;
+    return Array.from({ length }, (_, index) => index + 1);
 };
 
-
+// Function to create calendar data for the current month
 const createData = () => {
     const current = new Date();
     current.setDate(1);
@@ -58,7 +54,7 @@ const createData = () => {
     return result;
 };
 
-
+// Function to add a table cell to the HTML string
 const addCell = (existing, classString, value) => {
     const result = `
         ${existing}
@@ -69,7 +65,7 @@ const addCell = (existing, classString, value) => {
     return result;
 };
 
-
+// Function to create the HTML table based on the calendar data
 const createHtml = (data) => {
     let result = '';
 
@@ -99,8 +95,10 @@ const createHtml = (data) => {
     return result;
 };
 
-// Only edit above
+// Set the title to the current month and year
 const current = new Date();
 document.querySelector('[data-title]').innerText = `${MONTHS[current.getMonth()]} ${current.getFullYear()}`;
+
+// Generate calendar data and populate the HTML content
 const data = createData();
 document.querySelector('[data-content]').innerHTML = createHtml(data);
